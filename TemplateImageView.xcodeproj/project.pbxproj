@@ -13,6 +13,7 @@
 		F4B3CFFA1AAA98C6008A9ECB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B3CFF91AAA98C6008A9ECB /* Images.xcassets */; };
 		F4B3CFFD1AAA98C6008A9ECB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B3CFFB1AAA98C6008A9ECB /* LaunchScreen.xib */; };
 		F4B3D0091AAA98C6008A9ECB /* TemplateImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B3D0081AAA98C6008A9ECB /* TemplateImageViewTests.swift */; };
+		F4B3D0141AAA998F008A9ECB /* TemplateImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B3D0131AAA998F008A9ECB /* TemplateImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		F4B3D0021AAA98C6008A9ECB /* TemplateImageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateImageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B3D0071AAA98C6008A9ECB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4B3D0081AAA98C6008A9ECB /* TemplateImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateImageViewTests.swift; sourceTree = "<group>"; };
+		F4B3D0131AAA998F008A9ECB /* TemplateImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TemplateImageView.swift; path = Classes/TemplateImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		F4B3CFEF1AAA98C6008A9ECB /* TemplateImageView */ = {
 			isa = PBXGroup;
 			children = (
+				F4B3D0121AAA9971008A9ECB /* Classes */,
 				F4B3CFF21AAA98C6008A9ECB /* AppDelegate.swift */,
 				F4B3CFF41AAA98C6008A9ECB /* ViewController.swift */,
 				F4B3CFF61AAA98C6008A9ECB /* Main.storyboard */,
@@ -110,6 +113,14 @@
 				F4B3D0071AAA98C6008A9ECB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4B3D0121AAA9971008A9ECB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F4B3D0131AAA998F008A9ECB /* TemplateImageView.swift */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B3D0141AAA998F008A9ECB /* TemplateImageView.swift in Sources */,
 				F4B3CFF51AAA98C6008A9ECB /* ViewController.swift in Sources */,
 				F4B3CFF31AAA98C6008A9ECB /* AppDelegate.swift in Sources */,
 			);

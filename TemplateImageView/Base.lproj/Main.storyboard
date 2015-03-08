@@ -1,25 +1,119 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14D87h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="KiK-ye-E89">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="QpP-mS-GYi">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="KiK-ye-E89" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                        <viewControllerLayoutGuide type="top" id="3b2-JI-0KZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="1df-Vq-HbL"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                    <view key="view" contentMode="scaleToFill" id="kHy-wu-YYK">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0qP-wG-GJ4" customClass="TemplateImageView" customModule="TemplateImageView" customModuleProvider="target">
+                                <rect key="frame" x="154" y="116" width="182" height="182"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="182" id="8GE-SI-QYp"/>
+                                    <constraint firstAttribute="width" constant="182" id="pEo-hd-pF7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="descriptiveText" value="Some image of galaxy"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="show1x" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="simpleSizeMark" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="show2x" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="show3x" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="descriptiveTextColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qrt-xZ-0zV" customClass="TemplateImageView" customModule="TemplateImageView" customModuleProvider="target">
+                                <rect key="frame" x="350" y="212" width="96" height="86"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="Gju-Ag-BwQ"/>
+                                    <constraint firstAttribute="height" constant="86" id="QQw-YS-XKm"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="simpleSizeMark" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="descriptiveTextColor">
+                                        <color key="value" red="1" green="0.53333333329999999" blue="0.34509803919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="descriptiveText" value="Even smaller"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="descriptiveTextSize">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sizeMarkTextSize">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eDJ-In-FJM" customClass="TemplateImageView" customModule="TemplateImageView" customModuleProvider="target">
+                                <rect key="frame" x="154" y="321" width="109" height="109"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="1Xd-Xy-yoV"/>
+                                    <constraint firstAttribute="width" constant="109" id="lz3-Nn-Sey"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="descriptiveText" value="Some image of galaxy"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="show1x" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="simpleSizeMark" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="show2x" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="show3x" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="descriptiveTextColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="Galaxy"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pCc-Tk-ncO" customClass="TemplateImageView" customModule="TemplateImageView" customModuleProvider="target">
+                                <rect key="frame" x="279" y="321" width="131" height="123"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="123" id="NPU-oz-S3F"/>
+                                    <constraint firstAttribute="width" constant="131" id="znY-6G-RwF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="simpleSizeMark" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="descriptiveTextColor">
+                                        <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="descriptiveText" value="Smaller"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="descriptiveTextSize">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="show1x" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="show3x" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="0qP-wG-GJ4" secondAttribute="centerY" constant="93" id="Vha-eW-XAQ"/>
+                            <constraint firstAttribute="centerY" secondItem="eDJ-In-FJM" secondAttribute="centerY" constant="-75.5" id="aD3-UT-JGj"/>
+                            <constraint firstAttribute="centerX" secondItem="0qP-wG-GJ4" secondAttribute="centerX" constant="55" id="diT-n2-g0t"/>
+                            <constraint firstAttribute="centerX" secondItem="qrt-xZ-0zV" secondAttribute="centerX" constant="-98" id="kxL-GN-bYr"/>
+                            <constraint firstAttribute="centerY" secondItem="pCc-Tk-ncO" secondAttribute="centerY" constant="-82.5" id="pkp-YL-pF3"/>
+                            <constraint firstAttribute="centerX" secondItem="pCc-Tk-ncO" secondAttribute="centerX" constant="-44.5" id="vE9-Ro-gHY"/>
+                            <constraint firstAttribute="centerY" secondItem="qrt-xZ-0zV" secondAttribute="centerY" constant="45" id="xXn-m0-DKy"/>
+                            <constraint firstAttribute="centerX" secondItem="eDJ-In-FJM" secondAttribute="centerX" constant="91.5" id="zR6-fs-SSx"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdb-q9-aUe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="457" y="133"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Galaxy" width="600" height="600"/>
+    </resources>
 </document>
