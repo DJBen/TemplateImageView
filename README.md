@@ -2,11 +2,13 @@
 Excellent placeholder for your image views. Tell your designer what to do using the storyboard.
 
 ## Inspiration
-There must be times that you are putting an image view into your app of some purpose but you don't have the image. Not long after you are digging through the internet for image but you forget the dimension or even the purpose. This `TemplateImageView` is the perfect solution.
+There must be times that you are putting an image view into your app of some purpose but you don't have the image. Not long after you start digging through the internet for image, you forget the dimension, or even the purpose of the image. This `TemplateImageView` is the perfect solution to this annoyance.
+
+It does not only tell you the dimensions (of your choice) but it also contains a descriptive text field for you to illustrate the purpose of image being put there. You can your designer can communicate using the storyboard!
 
 ![Screenshot](https://raw.githubusercontent.com/DJBen/TemplateImageView/master/screenshot-storyboard.png "Screen shot 1")
 
-It does not only tell you the dimensions (of your choice) but it also contains a descriptive text field for you to illustrate the purpose of image being put there. You can your designer can communicate using the storyboard!
+
 
 ## Usage
 For now: download `Classes/TemplateImageView.swift` and plug it into your code. Create a new `UIView` and change its class into `TemplateImageView`.
