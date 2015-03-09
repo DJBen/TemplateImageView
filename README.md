@@ -11,9 +11,11 @@ It does not only tell you the dimensions (of your choice) but it also contains a
 
 
 ## Usage
-For now: download `Classes/TemplateImageView.swift` and plug it into your code. Create a new `UIView` and change its class into `TemplateImageView`.
-
-Cocoapods incoming.
+### Note
+This project works on Xcode 6.3 Swift 1.2 beta 2, but not previous releases of Xcode.
+### Installation
+- Cocoapods: Add `pod 'TemplateImageView'` to your Podfile and `pod install`.
+- Manual: Download `Classes/TemplateImageView.swift` and plug it into your code. Create a new `UIView` and change its class into `TemplateImageView`.
 
 ## Properties
 It provides many `@IBInspectable` properties for you to change in the storyboard of Xcode 6+ on the fly.
