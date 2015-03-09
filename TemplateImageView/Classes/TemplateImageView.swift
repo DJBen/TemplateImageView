@@ -174,7 +174,11 @@ import UIKit
         if let textString = descriptiveText {
             let text = textString as NSString
             let width: CGFloat = bounds.width / 1.7
-            let size = text.boundingRectWithSize(CGSize(width: width, height: CGFloat.max), options: NSStringDrawingOptions.UsesLineFragmentOrigin | NSStringDrawingOptions.UsesFontLeading, attributes: textAttributes, context: nil)
+            let boundingRectMaxSize = CGSize(width: width, height: CGFloat.max)
+            let options = unsafeBitCast(NSStringDrawingOptions.UsesLineFragmentOrigin.rawValue |
+                NSStringDrawingOptions.UsesFontLeading.rawValue,
+                NSStringDrawingOptions.self)
+            let size = text.boundingRectWithSize(boundingRectMaxSize, options: options, attributes: textAttributes, context: nil)
             let height: CGFloat = size.height
             text.drawInRect(CGRectMake(bounds.width / 2 - width / 2, bounds.height / 2 - height / 2, width, height), withAttributes: textAttributes)
         }
@@ -187,7 +191,9 @@ import UIKit
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = .Center
         let textAttributes = [NSForegroundColorAttributeName: sizeMarkTextColor, NSFontAttributeName: sizeMarkFont, NSParagraphStyleAttributeName: paragraphStyle]
+        sizeMarkColor.setStroke()
         if mask & .Horizontal {
+            sizeMarkColor.setStroke()
             let verticalAssistLine = UIBezierPath()
             verticalAssistLine.moveToPoint(CGPoint(x: edgeInsets.left, y: offset))
             verticalAssistLine.addLineToPoint(CGPoint(x: edgeInsets.left, y: offset + sizeMarkHeight))
@@ -210,6 +216,7 @@ import UIKit
             }
         }
         if mask & .Vertical {
+            sizeMarkColor.setStroke()
             let verticalAssistLine = UIBezierPath()
             verticalAssistLine.moveToPoint(CGPoint(x: offset, y: edgeInsets.top))
             verticalAssistLine.addLineToPoint(CGPoint(x: offset + sizeMarkHeight, y: edgeInsets.top))
